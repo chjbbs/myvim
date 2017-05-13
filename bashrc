@@ -136,3 +136,5 @@ alias music-next='pidof play | xargs kill -15'
 alias music-start='find /home/charles/Music/ -type f -name '\''*.mp3'\'' -print | xargs -d '\''\n'\'' -i -n 1 play {} > /home/charles/Music/music.log 2>&1 &'
 alias music-start-rand='find /home/charles/Music/ -type f -name '\''*.mp3'\'' | awk '\''{print $0,"~",int(rand()*10000)}'\'' | sort -t '\''~'\'' -k 2 | awk -F '\'' ~'\'' '\''{print $1}'\'' | xargs -i -n 1 play {} > /home/charles/Music/music.log 2>&1 &'
 alias music-stop='pidof play | xargs kill -9'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

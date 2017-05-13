@@ -485,7 +485,8 @@ Bundle 'The-NERD-Commenter'
 "django
 Bundle 'django_templates.vim'
 Bundle 'Django-Projects'
-
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf.vim'
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'djangojump'
 " ...
